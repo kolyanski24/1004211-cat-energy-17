@@ -6,43 +6,132 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/placehold.it" width="33" height="38" alt="Магазин Cat Energy">
-      </a>
-      <a class="page-header__logo-text" href="#">
-        <img class="page-header__logo-text-image" width="101" height="18" src="img/placehold.it" alt="Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item-active">
-              <a>Главная</a>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/placehold.it" width="33" height="38" alt="Магазин Cat Energy">
+        </a>
+        <a class="page-header__logo-text" href="index.html">
+          <img class="page-header__logo-text-image" width="101" height="18" src="img/placehold.it" alt="Cat Energy">
+        </a>
+        <button class="toggle-menu" type="button">Открыть меню</button>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <footer class="page-footer">
-      <a class="page-footer__logo-text" href="index.html">
-        <img class="page-footer__logo-text-image" src="img/placehold.it" width="101" height="18" alt="Cat Energy">
-      </a>
-      <div class="social-networks">
-        <a href="#" class="social social-vk"></a>
-        <a href="#" class="social social-insta"></a>
-        <a href="#" class="social social-fb"></a>
+        </nav>
       </div>
-      <div class="creators">
-        <a class="creators__text-link">HTML Academy</a>
-        <a class="creators__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="creators__icon-link-image" src="img/placehold.it" width="27" height="34" alt="Иконка HTML Academy">
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <h1 class="form-headline">Подбор программы</h1>
+        <p class="form-paragraph">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="info" action="https://echo.htmlacademy.ru" method="post">
+          <div class="info-column">
+            <fieldset class="info-column__fieldset">
+              <label class="info-column__field">
+                <b class="info-column__field-name">Имя:*</b>
+                <input type="text" name="cat-name" class="info-column__field_window" placeholder="Барсик" required>
+              </label>
+              <label class="info-column__field">
+                <b class="info-column__field-name">Вес (КГ):*</b>
+                <input type="text" name="cat-weight" class="info-column__field_window" placeholder="7" required>
+              </label>
+              <label class="info-column__field">
+                <b class="info-column__field-name">Возраст (лет):</b>
+                <input type="text" name="cat-weight" class="info-column__field_window">
+              </label>
+            </fieldset>
+          </div>
+          <div class="info-column">
+            <fieldset class="info-column__fieldset">
+              <input type="radio" name="program-choice" id="radio1" checked>
+              <label class="program-type" for="radio1">Похудение</label>
+              <input type="radio" name="program-choice" id="radio2">
+              <label class="program-type" for="radio2">Набор массы</label>
+              <input type="radio" name="program-choice" id="radio3">
+              <label class="program-type" for="radio3">Не знаю (нужен ваш совет)</label>
+            </fieldset>
+          </div>
+          <section class="owner-info">
+            <h3 class="owner-info__headline">Контактные данные (владельца кота)</h3>
+            <fieldset class="owner-info__fieldset">
+              <div class="info-column">
+                <label class="owner-info__field-name" for="e-mail">E-mail:*</label>
+                <input type="text" name="email" id="e-mail" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="info-column">
+                <label class="owner-info__field-name" for="phone">Телефон:*</label>
+                <input type="text" name="phone-number" id="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
+            </fieldset>
+          </section>
+          <section class="comment">
+            <h3 class="comment__headline">Комментарий</h3>
+            <textarea class="comment__textarea">поле для комментариев</textarea>
+          </section>
+          <section class="additionally">
+            <h3 class="additionally__headline">Дополнительно</h3>
+            <fieldset class="additionally__fieldset">
+              <div class="info-column">
+                <input type="checkbox" id="checkbox1" checked>
+                <label class="additionally__field-name" for="checkbox1">Сахарозаменитель</label>
+              </div>
+              <div class="info-column">
+                <input type="checkbox" id="checkbox2">
+                <label class="additionally__field-name" for="checkbox2">Питьевая вода</label>
+              </div>
+              <div class="info-column">
+                <input type="checkbox" id="checkbox3">
+                <label class="additionally__field-name" for="checkbox3">Молоко</label>
+              </div>
+              <div class="info-column">
+                <input type="checkbox" id="checkbox4">
+                <label class="additionally__field-name" for="checkbox4">Витамины</label>
+              </div>
+              <button class="form-button">Отправить заявку</button>
+              <p class="required-fields">* — Обязательные поля</p>
+            </fieldset>
+          </section>
+        </form>
+      </div>
+      <section class="map-address">
+        <div class="container">
+          <b class="cooperation">
+            приглашаем к сотрудничеству дилеров!
+          </b>
+          <address class="address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="map-img">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <a class="page-footer__logo-text" href="index.html">
+          <img class="page-footer__logo-text-image" src="img/placehold.it" width="101" height="18" alt="Cat Energy">
         </a>
+        <div class="social-networks">
+          <a href="#" class="social social-vk">Vk</a>
+          <a href="#" class="social social-insta">Insta</a>
+          <a href="#" class="social social-fb">Fb</a>
+        </div>
+        <div class="creators">
+          <a class="creators__text-link">HTML Academy</a>
+          <a class="creators__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
+            иконка-ссылка на HA
+            <img class="creators__icon-link-image" src="img/placehold.it" width="27" height="34" alt="Иконка HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
