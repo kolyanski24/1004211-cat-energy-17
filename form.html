@@ -52,11 +52,11 @@
           </div>
           <div class="info-column">
             <fieldset class="info-column__fieldset">
-              <input type="radio" name="program-choice" id="radio1" checked>
+              <input type="radio" name="program-choice" id="radio1" value="weight-loss" checked>
               <label class="program-type" for="radio1">Похудение</label>
-              <input type="radio" name="program-choice" id="radio2">
+              <input type="radio" name="program-choice" id="radio2" value="weight-gain">
               <label class="program-type" for="radio2">Набор массы</label>
-              <input type="radio" name="program-choice" id="radio3">
+              <input type="radio" name="program-choice" id="radio3" value="unknown">
               <label class="program-type" for="radio3">Не знаю (нужен ваш совет)</label>
             </fieldset>
           </div>
@@ -75,25 +75,25 @@
           </section>
           <section class="comment">
             <h3 class="comment__headline">Комментарий</h3>
-            <textarea class="comment__textarea">поле для комментариев</textarea>
+            <textarea class="comment__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </section>
           <section class="additionally">
             <h3 class="additionally__headline">Дополнительно</h3>
             <fieldset class="additionally__fieldset">
               <div class="info-column">
-                <input type="checkbox" id="checkbox1" checked>
+                <input type="checkbox" id="checkbox1" value="sweetener" checked>
                 <label class="additionally__field-name" for="checkbox1">Сахарозаменитель</label>
               </div>
               <div class="info-column">
-                <input type="checkbox" id="checkbox2">
+                <input type="checkbox" id="checkbox2" value="water">
                 <label class="additionally__field-name" for="checkbox2">Питьевая вода</label>
               </div>
               <div class="info-column">
-                <input type="checkbox" id="checkbox3">
+                <input type="checkbox" id="checkbox3" value="milk">
                 <label class="additionally__field-name" for="checkbox3">Молоко</label>
               </div>
               <div class="info-column">
-                <input type="checkbox" id="checkbox4">
+                <input type="checkbox" id="checkbox4" value="vitamins">
                 <label class="additionally__field-name" for="checkbox4">Витамины</label>
               </div>
               <button class="form-button">Отправить заявку</button>
@@ -128,7 +128,7 @@
         <div class="creators">
           <a class="creators__text-link">HTML Academy</a>
           <a class="creators__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
-            иконка-ссылка на HA
+            HTML Academy
             <img class="creators__icon-link-image" src="img/placehold.it" width="27" height="34" alt="Иконка HTML Academy">
           </a>
         </div>
