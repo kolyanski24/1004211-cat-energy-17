@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин функционального питания для котов Cat Energy</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff2">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header image-header">
       <div class="page-header__container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/placehold.it" width="33" height="38" alt="Магазин Cat Energy">
-        </a>
-        <a class="page-header__logo-text" href="index.html">
-          <img class="page-header__logo-text-image" width="101" height="18" src="img/placehold.it" alt="Cat Energy">
+        <a class="logo" href="index.html">
+          <img class="logo__image" src="../img/logo-mobile.svg" width="191" height="39" alt="Магазин Cat Energy">
         </a>
         <button class="toggle-menu" type="button">Открыть меню</button>
         <nav class="navigation">
@@ -32,23 +33,23 @@
     <main class="page-main">
       <div class="container">
         <section class="commercial">
-          <h1 class="commercial__headline">Функциональное питание для котов</h1>
+          <h1 class="commercial__headline">Функциональное<br> питание для котов</h1>
           <p class="commercial__text">Занялся собой? займись котом!</p>
-          <img class="commercial__product-image" src="img/placehold.it" width="280" height="270" alt="Изображение товара">
+          <img class="commercial__product-image" src="../img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение товара">
           <a class="program-selection-link" href="form.html">Подобрать программу</a>
         </section>
         <section class="program-types">
           <div class="program-types__wrapper">
             <div class="program-types__item weight-loss">
-              <h3 class="weight-loss__headline">Похудение</h3>
-              <p class="weight-loss__paragraph">
+              <h3 class="program-types__headline">Похудение</h3>
+              <p class="program-types__paragraph">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="weight-loss__link-text" href="catalog.html">Каталог slim</a>
             </div>
             <div class="program-types__item weight-gain">
-              <h3 class="weight-gain__headline">Набор массы</h3>
-              <p class="weight-gain__paragraph">
+              <h3 class="program-types__headline">Набор массы</h3>
+              <p class="program-types__paragraph">
                 Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
@@ -60,22 +61,22 @@
           <h2 class="product-description__headline">Как это работает</h2>
           <ul class="product-description__list">
             <li class="product-description__item">
-              <p class="product-description__paragraph_first">
+              <p class="product-description__paragraph">
                 Функциональное питание содержит только полезные питательные вещества.
               </p>
             </li>
             <li class="product-description__item">
-              <p class="product-description__paragraph_second">
+              <p class="product-description__paragraph">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </p>
             </li>
             <li class="product-description__item">
-              <p class="product-description__paragraph_third">
+              <p class="product-description__paragraph">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </p>
             </li>
             <li class="product-description__item">
-              <p class="product-description__paragraph_fourth">
+              <p class="product-description__paragraph">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
             </li>
@@ -88,23 +89,33 @@
           <p class="living-example__paragraph">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="living-example__table_wrapper">
-            <div class="living-example__table_weight">5 кг</div>
-            <div class="living-example__table_days">60 дней</div>
+          <div class="living-example__wrapper">
+            <div class="living-example__table_wrapper">
+              <div class="living-example__table_weight">
+                <strong class="living-example__table_num">5 кг</strong>
+                <p class="living-example__table_text">снижение веса</p>
+              </div>
+              <div class="living-example__table_days">
+                <strong class="living-example__table_num">60 дней</strong>
+                <p class="living-example__table_text">затрачено времени</p>
+              </div>
+            </div>
+            <b class="living-example__expenses">Затраты на питание: 15 000 руб.</b>
           </div>
-          <b class="living-example__expenses">Затраты на питание: 15 000 руб.</b>
           <img class="living-example__image" src="img/placehold.it" width="311" height="232">
           <input type="range" name="before-now" min="1" max="20" step="1">
         </div>
       </section>
       <section class="map-address">
         <div class="container">
-          <b class="cooperation">
-            приглашаем к сотрудничеству дилеров!
-          </b>
-          <address class="address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="map-address__wrapper">
+            <b class="cooperation">
+              приглашаем к сотрудничеству дилеров!
+            </b>
+            <address class="address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
         <div class="map-img">
         </div>
@@ -112,20 +123,22 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="page-footer__logo-text" href="index.html">
-          <img class="page-footer__logo-text-image" src="img/placehold.it" width="101" height="18" alt="Cat Energy">
-        </a>
-        <div class="social-networks">
-          <a href="#" class="social social-vk">Vk</a>
-          <a href="#" class="social social-insta">Insta</a>
-          <a href="#" class="social social-fb">Fb</a>
-        </div>
-        <div class="creators">
-          <a class="creators__text-link">HTML Academy</a>
-          <a class="creators__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-            <img class="creators__icon-link-image" src="img/placehold.it" width="27" height="34" alt="Иконка HTML Academy">
+        <div class="page-footer__row">
+          <a class="page-footer__logo-text" href="index.html">
+            <img class="page-footer__logo-text-image" src="../img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
           </a>
+          <div class="social-networks">
+            <a href="#" class="social social-vk">Vk</a>
+            <a href="#" class="social social-insta">Insta</a>
+            <a href="#" class="social social-fb">Fb</a>
+          </div>
+          <div class="creators">
+            <a class="creators__text-link">HTML Academy</a>
+            <a class="creators__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+              <img class="creators__icon-link-image" src="../img/htmlacademy.svg" width="27" height="34" alt="Иконка HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
